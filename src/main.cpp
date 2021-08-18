@@ -22,7 +22,6 @@ int main()
         glfwTerminate();
         return -1;
     }
-    
 
     glfwMakeContextCurrent(window);
 
@@ -34,6 +33,12 @@ int main()
         //Map ESC key to WindowShouldClose functionality
         if (glfwGetKey(window, GLFW_KEY_ESCAPE) == GLFW_PRESS)
             glfwSetWindowShouldClose(window, GL_TRUE);
+    
+        if (!gladLoadGLLoader((GLADloadproc) glfwGetProcAddress))
+        {
+            std::cout << "ALERT : Failed to initialise GLAD." << std::endl;
+            return -1;
+        }
     }
     
 
