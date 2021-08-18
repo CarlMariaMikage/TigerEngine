@@ -16,6 +16,14 @@ int main()
     //Fullscreen
     //GLFWwindow* window_fullscreen = glfwCreateWindow(800, 600, "OpenGL", glfwGetPrimaryMonitor(), nullptr);
 
+    if (window == NULL)
+    {
+        std::cout << "ALERT : Failed to instantiate GLFW window." << '\n';
+        glfwTerminate();
+        return -1;
+    }
+    
+
     glfwMakeContextCurrent(window);
 
     while (!glfwWindowShouldClose(window))
@@ -30,6 +38,5 @@ int main()
     
 
     glfwTerminate();
-
     return 0;
 }
