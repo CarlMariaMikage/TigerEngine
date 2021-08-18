@@ -20,5 +20,5 @@
 #include <thread>
 
 // OpenGL libraries
+#include <glad/glad.h> // NB: THIS HAS TO COME BEFORE GLFW is included OTHERWISE THE WHOLE BUILD PROCESS FKING BREAKS
 #include <GLFW/glfw3.h>
-#include <glad/glad.h>

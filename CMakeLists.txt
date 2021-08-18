@@ -8,6 +8,6 @@ set(CMAKE_CXX_FLAGS  "${CMAKE_CXX_FLAGS} ${GCC_COVERAGE_COMPILE_FLAGS}") #set co
 set(CMAKE_EXE_LINKER_FLAGS  "${CMAKE_EXE_LINKER_FLAGS} ${GCC_COVERAGE_LINK_FLAGS}") #set linker flags
 
 include_directories(include) #include directories
-file(GLOB SOURCES "src/*.cpp") #source directories
+file(GLOB SOURCES "src/*.cpp" "src/*.c") #source directories
 
 add_executable(engine ${SOURCES})
