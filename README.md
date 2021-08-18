@@ -11,3 +11,8 @@ cmake ..
 make
 ./engine
 ```
+4. To get rid of Cmake BS, simply run:
+```
+git clean -d -f -x 
+```
+in the `build` directory.
