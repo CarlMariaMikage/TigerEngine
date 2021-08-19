@@ -33,11 +33,13 @@ int main()
 
     while (!glfwWindowShouldClose(window))
     {
-        //Input
+        /**
+         * Input
+         */
         te::process_input(window);
 
         /**
-         * Rendering commands 
+         * Render
          */
         glClearColor(0.2f, 0.3f, 0.3f, 1.0f);
         glClear(GL_COLOR_BUFFER_BIT);
