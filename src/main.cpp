@@ -4,7 +4,7 @@
 //Main method
 int main()
 {
-    //Init and hint methods
+    //GLFW init and hint methods
     glfwInit();
     
     glfwWindowHint(GLFW_CONTEXT_VERSION_MAJOR, 4);
@@ -12,10 +12,9 @@ int main()
     glfwWindowHint(GLFW_OPENGL_PROFILE, GLFW_OPENGL_CORE_PROFILE);
     glfwWindowHint(GLFW_OPENGL_FORWARD_COMPAT, GL_TRUE);
 
-    glfwWindowHint(GLFW_RESIZABLE, GL_FALSE);
-
     //Create GLFW window
-    GLFWwindow* window = glfwCreateWindow(te::SCREEN_WIDTH, te::SCREEN_HEIGHT, "TigerEngine", glfwGetPrimaryMonitor(), NULL); //fullscreen
+    //Pass glfwGetPrimaryMonitor() as GLFWmonitor pointer object in params to get fullscreen
+    GLFWwindow* window = glfwCreateWindow(te::SCREEN_WIDTH, te::SCREEN_HEIGHT, "TigerEngine", NULL, NULL); 
     if (window == NULL)
     {
         std::cout << "ALERT : Failed to instantiate GLFW window." << '\n';
@@ -44,10 +43,10 @@ int main()
         glClear(GL_COLOR_BUFFER_BIT);
 
         /**
-         * Poll I/O events and swap buffers
+         * Swap buffers and poll I/O events
          */
-        glfwPollEvents();
         glfwSwapBuffers(window);
+        glfwPollEvents();
     }
     
     glfwTerminate();
