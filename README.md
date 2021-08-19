@@ -16,6 +16,13 @@ sudo dnf install glfw glfw-devel
 sudo apt-get install libglfw3 libglfw3-dev
 ```
 
+Then clone the repo.
+
+```
+git clone https://github.com/CarlMariaMikage/TigerEngine.git
+cd TigerEngine/
+```
+
 2. Change to `build` directory:
 ```
 cd build
