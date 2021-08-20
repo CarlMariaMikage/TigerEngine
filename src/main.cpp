@@ -120,6 +120,8 @@ int main()
     glVertexAttribPointer(0, 3, GL_FLOAT, GL_FALSE, 3 * sizeof(float), (void*)0);
     glEnableVertexAttribArray(0);
 
+    glPolygonMode(GL_FRONT_AND_BACK, GL_LINE);
+
     while (!glfwWindowShouldClose(window))
     {
         /**
@@ -130,7 +132,8 @@ int main()
         /**
          * Render
          */
-        glClearColor(0.2f, 0.3f, 0.3f, 1.0f);
+        //71, 37, 143
+        glClearColor(0.071f, 0.037f, 0.143f, 1.0f);
         glClear(GL_COLOR_BUFFER_BIT);
 
         glUseProgram(shader_program);
