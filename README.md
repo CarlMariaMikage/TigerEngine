@@ -1,9 +1,17 @@
 # Build instructions
+## Platform support
+Windows and Linux(Debian and RedHat) for now, Mac/iOS/Android for later.
 
-## Linux 
+## Start
 
-1. Ensure you have the necessary libraries:
+Ensure you have the necessary libraries. Required dependencies :
+- Clang: https://releases.llvm.org/download.html
+- Vulkan SDK: https://vulkan.lunarg.com/
+    
+Recommended text editor :
+- VS Code: https://code.visualstudio.com/
 
+Then depending on the OS, run the following commands
 ### Fedora/RedHat Distributions 
 
 ```
@@ -16,32 +24,23 @@ sudo dnf install glfw glfw-devel
 sudo apt-get install libglfw3 libglfw3-dev
 ```
 
-Then clone the repo.
+### Windows
+
+Follow the instructions on : 
+
+    https://vulkan.lunarg.com/doc/sdk/1.3.236.0/windows/getting_started.html
+
+to install the Vulkan SDK. 
+
+### Build Tiger Engine
+
+Clone the repo.
 
 ```
 git clone https://github.com/CarlMariaMikage/TigerEngine.git
 cd TigerEngine/
 ```
 
-2. Change to `build` directory:
-```
-cd build
-```
+Open the folder in VS Code then press ```Ctrl+Shift+B``` to build.
 
-3. Run `cmake ..` and if everything went well then run `make`:
-```
-cmake ..
-make
-```
-4. To get rid of CMake cache, Makefiles and other misc. stuff in the `build` directory, simply run:
-```
-git clean -d -f -x 
-```
-
-5. You should now have just the `engine` executable.
-
-## Windows 
-Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.
-
-## Mac 
-Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.
+The ```.exe```, ```.dll``` and ```.lib``` files will be in the ```/bin``` folder.
