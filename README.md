@@ -1,3 +1,6 @@
+# TigerEngine
+
+Inspired by Kohi Engine, a C game engine that utilises Vulkan SDK.
 # Build instructions
 ## Platform support
 Windows and Linux(Debian and RedHat) for now, Mac/iOS/Android for later.
