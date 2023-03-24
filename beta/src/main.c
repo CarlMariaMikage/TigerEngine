@@ -1,8 +1,6 @@
 #include <core/asserts.h>
 #include <core/logger.h>
 
-#include <stdio.h>
-
 int main(void)
 {
     TFATAL("A test message: %f", 3.14f);

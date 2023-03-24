@@ -30,7 +30,7 @@ sudo dnf install glfw glfw-devel
 ### Ubuntu/Debian Distributions
 
 ```bash
-sudo apt-get install libglfw3 libglfw3-dev
+sudo apt-get install libglfw3 libglfw3-dev libx11-xcb-dev
 ```
 
 ### Windows
