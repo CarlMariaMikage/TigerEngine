@@ -12,11 +12,11 @@ typedef signed short i16;
 typedef signed int i32;
 typedef signed long long i64;
 
-// Floating point types
+// Floating point types.
 typedef float f32;
 typedef double f64;
 
-// Boolean types
+// Boolean types.
 typedef int b32;
 typedef char b8;
 
@@ -44,14 +44,14 @@ STATIC_ASSERT(sizeof(f64) == 8, "Expected f64 to be 8 bytes.");
 #define TRUE 1
 #define FALSE 0
 
-// Platform detection
+// Platform detection.
 #if defined(WIN32) || defined(_WIN32) || defined(__WIN32__) 
 #define TPLATFORM_WINDOWS 1
 #ifndef _WIN64
 #error "64-bit is required on Windows!"
 #endif
 #elif defined(__linux__) || defined(__gnu_linux__)
-// Linux OS
+// Linux OS.
 #define TPLATFORM_LINUX 1
 #if defined(__ANDROID__)
 #define TPLATFORM_ANDROID 1
@@ -60,21 +60,21 @@ STATIC_ASSERT(sizeof(f64) == 8, "Expected f64 to be 8 bytes.");
 // Catch anything not caught by the above.
 #define TPLATFORM_UNIX 1
 #elif defined(_POSIX_VERSION)
-// Posix
+// Posix.
 #define TPLATFORM_POSIX 1
 #elif __APPLE__
-// Apple platforms
+// Apple platforms.
 #define TPLATFORM_APPLE 1
 #include <TargetConditionals.h>
 #if TARGET_IPHONE_SIMULATOR
-// iOS Simulator
+// iOS Simulator.
 #define TPLATFORM_IOS 1
 #define TPLATFORM_IOS_SIMULATOR 1
 #elif TARGET_OS_IPHONE
 #define TPLATFORM_IOS 1
-// iOS device
+// iOS device.
 #elif TARGET_OS_MAC
-// Other kinds of Mac OS
+// Other kinds of Mac OS.
 #else
 #error "Unknown Apple platform"
 #endif
@@ -83,14 +83,14 @@ STATIC_ASSERT(sizeof(f64) == 8, "Expected f64 to be 8 bytes.");
 #endif
 
 #ifdef TEXPORT
-// Exports
+// Exports.
 #ifdef _MSC_VER
 #define TAPI __declspec(dllexport)
 #else
 #define TAPI __attribute__((visibility("default")))
 #endif
 #else
-// Imports
+// Imports.
 #ifdef _MSC_VER
 #define TAPI __declspec(dllimport)
 #else
