@@ -1,55 +1,26 @@
-# TigerEngine
+# Leviathan
 
-Inspired by Kohi Engine, a 3D game engine in C that utilises Vulkan SDK.
-
-In the source code, the prefix **T** (as in **T**API) is derived from the name of the engine, **T**igerEngine.
+A 3D game engine in C++ that utilises the DirectX 11 Graphics API.
 
 ## Build instructions
 
 ### Platform support
 
-Windows and Linux(Debian and RedHat) for now, Mac/iOS/Android for later.
+Windows only.
 
-Ensure you have the necessary libraries. Required dependencies :
+### Dependencies
 
-- Clang: <https://releases.llvm.org/download.html>
-- Vulkan SDK: <https://vulkan.lunarg.com/>
+Ensure you have the Visual Studio IDE with Windows SDK installed. 
+- Visual Studio: <https://visualstudio.microsoft.com/>
 
-Recommended text editor :
-
-- VS Code: <https://code.visualstudio.com/>
-
-Then depending on the OS, run the following commands
-
-### Fedora/RedHat Distributions
-
-```bash
-sudo dnf install glfw glfw-devel
-```
-
-### Ubuntu/Debian Distributions
-
-```bash
-sudo apt-get install libglfw3 libglfw3-dev libx11-xcb-dev
-```
-
-### Windows
-
-Follow the instructions on :
-
-<https://vulkan.lunarg.com/doc/sdk/1.3.236.0/windows/getting_started.html>
-
-to install the Vulkan SDK.
-
-### Build Tiger Engine
+### Build Leviathan
 
 Clone the repo.
 
 ```bash
-git clone https://github.com/CarlMariaMikage/TigerEngine.git
-cd TigerEngine/
+git clone https://github.com/Mistral1729/Leviathan.git
+cd Leviathan/
 ```
-
-Open the folder in VS Code then press ```Ctrl+Shift+B``` to build.
+Open the Visual Studio solution then build.
 
 The ```.exe```, ```.dll``` and ```.lib``` files will be in the ```/bin``` folder.
