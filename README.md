@@ -1,6 +1,23 @@
+---
+page_type: sample
+languages:
+- cpp
+products:
+- windows
+- windows-uwp
+name: Leviathan
+urlFragment: leviathan
+description: This sample demonstrates the use of asynchronous compute shaders (multi-engine) to simulate an n-body gravity system.
+extendedZipContent:
+- path: LICENSE
+  target: LICENSE
+---
+
 # Leviathan
 
-A 3D game engine in C++ that utilises the DirectX 11 Graphics API.
+![Sample](src/D3D12nBodyGravity.png)
+
+A 3D game engine in C++ that utilises the DirectX 12 Graphics API.
 
 ## Build instructions
 
