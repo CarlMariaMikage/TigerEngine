@@ -11,7 +11,7 @@ description: This sample demonstrates the use of asynchronous compute shaders (m
 
 # Leviathan
 
-![Sample](src/D3D12nBodyGravity.png)
+![Sample](src/Leviathan.png)
 
 A 3D game engine in C++ that utilises the DirectX 12 Graphics API.
 

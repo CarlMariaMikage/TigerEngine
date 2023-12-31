@@ -29,7 +29,7 @@
   <PropertyGroup Label="Globals">
     <ProjectGuid>{7DAD7853-3F78-48F9-B509-428D64658AE8}</ProjectGuid>
     <Keyword>DirectXApp</Keyword>
-    <RootNamespace>D3D12nBodyGravity</RootNamespace>
+    <RootNamespace>Leviathan</RootNamespace>
     <DefaultLanguage>en-US</DefaultLanguage>
     <MinimumVisualStudioVersion>14.0</MinimumVisualStudioVersion>
     <AppContainerApplication>true</AppContainerApplication>
