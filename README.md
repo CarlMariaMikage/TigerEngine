@@ -1,5 +1,4 @@
 ---
-page_type: sample
 languages:
 - cpp
 products:
@@ -8,9 +7,6 @@ products:
 name: Leviathan
 urlFragment: leviathan
 description: This sample demonstrates the use of asynchronous compute shaders (multi-engine) to simulate an n-body gravity system.
-extendedZipContent:
-- path: LICENSE
-  target: LICENSE
 ---
 
 # Leviathan
